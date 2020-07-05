@@ -1,1 +1,3 @@
-let app = Elm.Main.init({ flags: 10 });
+import { toChristmas } from './dates.js'
+
+let app = Elm.Main.init({ flags: toChristmas() });

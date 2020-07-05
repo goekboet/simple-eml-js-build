@@ -1,14 +1,12 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (button, div, text)
-import Html.Events exposing (onClick)
-
+import Html exposing (h1, p, div, text)
 
 
 -- MAIN
 
-type alias Flags = Int
+type alias Flags = String
 
 main : Program Flags Model Msg
 main =
@@ -23,25 +21,19 @@ main =
 
 -- MODEL
 
-type alias Model = Int
+type alias Model = String
 
 init : Flags -> (Model, Cmd Msg)
 init f =
-  (0, Cmd.none)
+  (f, Cmd.none)
 
 
 -- UPDATE
 
-type Msg = Increment | Decrement
+type Msg = NoOp
 
 update : Msg -> Model -> (Model, Cmd Msg)
-update msg model =
-  case msg of
-    Increment ->
-      (model + 1, Cmd.none)
-
-    Decrement ->
-      (model - 1, Cmd.none)
+update msg model = (model, Cmd.none)
 
 
 -- VIEW
@@ -51,9 +43,8 @@ view model =
     { title = "Publish"
     , body =
         [ div []
-          [ button [ onClick Decrement ] [ text "-" ]
-          , div [] [ text (String.fromInt model) ]
-          , button [ onClick Increment ] [ text "+" ]
+          [ h1 [] [ text "Next christmas" ]
+          , p [] [ text model ] 
           ] 
         ]
     }

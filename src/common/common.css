@@ -1,0 +1,22 @@
+h1, h2, h3, p {
+    font-family: sans-serif;
+    color: sienna;
+}
+
+body {
+    background-color: cornsilk;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+.content {
+    margin: 0 auto 0 auto;
+    padding: 4em 2em 4em 2em;
+    width: 40em;
+    min-height: 100%;
+    background-color: antiquewhite;
+}

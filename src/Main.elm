@@ -2,6 +2,7 @@ module Main exposing (main)
 
 import Browser
 import Html exposing (h1, p, div, text)
+import Html.Attributes exposing (class)
 
 
 -- MAIN
@@ -42,7 +43,7 @@ view : Model -> Browser.Document Msg
 view model =
     { title = "Publish"
     , body =
-        [ div []
+        [ div [ class "content" ]
           [ h1 [] [ text "Next christmas" ]
           , p [] [ text model ] 
           ] 

@@ -38,7 +38,7 @@ else build
 fi
 
 cp src/index.html dist/index.html
-cp src/style.css dist/style.css
+cat $(find src -type f -name "*.css") > dist/style.css
 cp src/favicon.ico dist/favicon.ico
 
 ls -lh dist

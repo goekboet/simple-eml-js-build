@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "echo UP"
+    "start": "serve -l 3030 dist"
   },
   "author": "",
   "license": "ISC",

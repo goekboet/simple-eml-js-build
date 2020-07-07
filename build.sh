@@ -25,7 +25,7 @@ build() {
         -o dist/index.js \
         -t [ babelify --presets [ @babel/preset-env ] ] 
 
-    uglifyjs dist/index.js \
+    uglifyjs dist/index.js --compress --mangle \
         -o dist/index.js
 }
 

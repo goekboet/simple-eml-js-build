@@ -1,0 +1,49 @@
+.templateAdd {
+    display: flex;
+    align-items: baseline;
+}
+
+.templateAdd label {
+    flex-grow: 1;
+}
+
+.templateAdd button {
+    padding: 0.5em;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.templateItems {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.templateItems li {
+    padding-top: 1em;
+    display: flex;
+}
+
+.templateItems button {
+    font-weight: bold;
+}
+
+.templateItems li > h3 {
+    flex-grow: 1;
+}
+
+.templateInput {
+    display: flex;
+    align-items: baseline;
+}
+
+.templateInput > label {
+    margin-right: 1em;
+}
+
+.templateInput > input[type=text] {
+    border-bottom: solid;
+    border-width: thin;
+    border-bottom-style: dashed;
+}
